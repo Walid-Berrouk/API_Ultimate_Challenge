@@ -81,9 +81,6 @@ export default function Testomonials() {
                       Error : {testimonials.err}
                       </div>
           }
-        
-
-            
             </div>
         </div>
     </>
