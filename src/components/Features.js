@@ -58,22 +58,22 @@ export default function Features() {
 
   return (
     <div className='container'>
-        <div className="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        
         {features.isLoading ?
               <div className='m-5 d-flex justify-content-center'>
                 <div className="spinner-border" role="status">
                 </div>
               </div>
               : !features.err ?
-                    <>
+                    <div className="row g-4 py-5 row-cols-1 row-cols-lg-3">
                       {featuresList}
-                    </>
+                    </div>
                   :
                     <div className="alert alert-danger" role="alert">
                       Error : {features.err}
                       </div>
           }
-        </div>
+        
     </div>
   )
 }

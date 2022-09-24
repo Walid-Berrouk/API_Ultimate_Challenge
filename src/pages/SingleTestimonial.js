@@ -1,6 +1,9 @@
 import React from 'react'
 
-export default function SingleTestimonial() {
+export default function SingleTestimonial(props) {
+
+    console.log(props.authorId);
+
   return (
     <>
         <section className="py-5 text-center container">
@@ -15,7 +18,7 @@ export default function SingleTestimonial() {
             <div className="card shadow-sm">
                 <div className="card-body">
                 <h1 className='card-title'>Jeph Star</h1>
-                <h6 class="card-subtitle mb-2 text-muted">Web Developper</h6>
+                <h6 className="card-subtitle mb-2 text-muted">Web Developper</h6>
                 <p className="card-text">24 years old</p>
                 <code>Alkalan</code>
                 </div>

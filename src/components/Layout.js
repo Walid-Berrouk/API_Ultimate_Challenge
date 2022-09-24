@@ -19,11 +19,14 @@ function Main() {
   }
 
 export default function Layout() {
+
+    const location = useLocation();
+
   return (
     <Routes>
         <Route path="main" element={<Main />} >
             <Route path="home" exact element={<LandingPage />} />
-            <Route path="home/:id" element={<SingleTestimonial /> } />
+            <Route path="home/:id" element={<SingleTestimonial authorId={location.state} /> } />
         </Route>
         <Route
             path="*"
